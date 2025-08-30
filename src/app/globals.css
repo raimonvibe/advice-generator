@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fef7ff;
+  --foreground: #2d1b69;
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --gradient-1: #ffeaa7;
+  --gradient-2: #fab1a0;
+  --gradient-3: #fd79a8;
+  --gradient-4: #a29bfe;
+  --gradient-5: #74b9ff;
+}
+
+[data-theme="dark"] {
+  --background: #1a0b2e;
+  --foreground: #e8d5ff;
+  --card-bg: rgba(45, 27, 105, 0.9);
+  --gradient-1: #6c5ce7;
+  --gradient-2: #a29bfe;
+  --gradient-3: #fd79a8;
+  --gradient-4: #fdcb6e;
+  --gradient-5: #00b894;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card-bg: var(--card-bg);
+  --color-gradient-1: var(--gradient-1);
+  --color-gradient-2: var(--gradient-2);
+  --color-gradient-3: var(--gradient-3);
+  --color-gradient-4: var(--gradient-4);
+  --color-gradient-5: var(--gradient-5);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2), var(--gradient-3), var(--gradient-4), var(--gradient-5));
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.theme-transition {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
