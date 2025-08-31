@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌟 Advice Generator
 
-## Getting Started
+![Advice Screenshot](advice.png)
 
-First, run the development server:
+🔗 **Live Demo:** [Advice Generator App](https://advice-generator-theta-ashy.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 📖 Project Overview
+The **Advice Generator** is a fun little web app that fetches random pieces of advice from a public API and displays them in a clean, modern UI.  
+Whenever you click the button 🎲, you’ll get a fresh piece of wisdom to brighten your day.
+
+---
+
+## 🚀 Features
+- ✅ Fetches advice from a free public API  
+- 🎨 Simple and responsive UI design  
+- ⚡ Fast, lightweight, and beginner-friendly  
+- 📱 Works on desktop & mobile  
+
+---
+
+## 🛠️ Tech Stack
+- **HTML5** – structure of the app  
+- **CSS3** – styling for a modern and clean look  
+- **JavaScript** – logic for fetching and displaying advice  
+- **API** – [Advice Slip JSON API](https://api.adviceslip.com/)  
+
+---
+
+## 📂 Project Structure
+```
+advice-generator/
+├── index.html      # Main HTML file
+├── style.css       # CSS styling
+├── script.js       # JavaScript logic
+├── advice.png      # Preview image
+└── README.md       # Project documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ▶️ How to Run Locally
+1. Clone the repo  
+   ```bash
+   git clone https://github.com/raimonvibe/advice-generator.git
+   ```
+2. Open the folder  
+   ```bash
+   cd advice-generator
+   ```
+3. Open `index.html` in your browser  
+   That’s it 🎉
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ✨ Future Improvements
+- Save favorite advice quotes 💾  
+- Add a share-to-social button 📢  
+- Dark/Light theme toggle 🌗  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💡 Inspiration
+Sometimes all you need is a single line of advice to spark new ideas or comfort you in tough times. This project is a playful way to mix coding practice with daily wisdom ✨
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+👨‍💻 Built with ❤️ by [RaimonVibe](https://github.com/raimonvibe)
