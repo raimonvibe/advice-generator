@@ -1,4 +1,4 @@
-# 🌟 Advice Generator
+# 🌟 Advice Generator (Next.js)
 
 ![Advice Screenshot](advice.png)
 
@@ -7,35 +7,40 @@
 ---
 
 ## 📖 Project Overview
-The **Advice Generator** is a fun little web app that fetches random pieces of advice from a public API and displays them in a clean, modern UI.  
+The **Advice Generator** is a fun little web app built with **Next.js** that fetches random pieces of advice from a public API and displays them in a clean, modern UI.  
 Whenever you click the button 🎲, you’ll get a fresh piece of wisdom to brighten your day.
 
 ---
 
 ## 🚀 Features
-- ✅ Fetches advice from a free public API  
-- 🎨 Simple and responsive UI design  
-- ⚡ Fast, lightweight, and beginner-friendly  
+- ✅ Built with **Next.js** for fast performance and easy deployment  
+- 🌐 Server-side rendering for optimized loading  
+- 🎨 Responsive UI with modern styling  
+- ⚡ Fetches advice from a free public API  
 - 📱 Works on desktop & mobile  
 
 ---
 
 ## 🛠️ Tech Stack
-- **HTML5** – structure of the app  
-- **CSS3** – styling for a modern and clean look  
-- **JavaScript** – logic for fetching and displaying advice  
+- **Next.js** – React framework for production  
+- **React** – UI components  
+- **CSS Modules / Tailwind (if used)** – styling  
 - **API** – [Advice Slip JSON API](https://api.adviceslip.com/)  
+- **Vercel** – hosting and deployment  
 
 ---
 
 ## 📂 Project Structure
 ```
 advice-generator/
-├── index.html      # Main HTML file
-├── style.css       # CSS styling
-├── script.js       # JavaScript logic
-├── advice.png      # Preview image
-└── README.md       # Project documentation
+├── public/
+│   └── advice.png       # Preview image
+├── pages/
+│   ├── index.js         # Main page
+├── styles/
+│   └── globals.css      # Global styles
+├── package.json         # Dependencies
+└── README.md            # Project documentation
 ```
 
 ---
@@ -45,12 +50,19 @@ advice-generator/
    ```bash
    git clone https://github.com/raimonvibe/advice-generator.git
    ```
-2. Open the folder  
+2. Navigate to the project folder  
    ```bash
    cd advice-generator
    ```
-3. Open `index.html` in your browser  
-   That’s it 🎉
+3. Install dependencies  
+   ```bash
+   npm install
+   ```
+4. Start the development server  
+   ```bash
+   npm run dev
+   ```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser 🎉  
 
 ---
 
